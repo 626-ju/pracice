@@ -11,7 +11,7 @@ if (localStorage.getItem("userName") === null) {
 
 function submitForm(event) {
   event.preventDefault;
-  userName = document.querySelector("input").value;
+  const userName = document.querySelector("input").value;
   localStorage.setItem("userName", userName);
   loginForm.classList.add("hidden");
   doGreeting(userName);
